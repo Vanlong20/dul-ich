@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<style>
+  /* img:hover{
+    width: 310px;
+    height: 200px;
+    max-width: 310px;
+  max-height: 200px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  } */
+  .moi{
+  position:absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000;
+    margin-bottom: 20px;
+
+  }
+  .zalo{
+    position:absolute;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1000;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+</style>
+
+
+  </head>
+<body>
+
+  <!-- kiểm tra đứng yên -->
+  <!-- <div class="fixed-top">
+   <div class="position-absolute top-0 start-100 translate-middle">ấeffexfcsd</div> 
+  </div> -->
+  <!-- <div class="fixed-top">mới</div> -->
+  <div class="moi bg-warning rounded-3 text-light"><i class="bi bi-telephone"></i> 0869 207 701</div>
+  <div class="zalo bg-warning rounded-3 text-light"><a href="https://www.messenger.com/t/100007198239459"><i class="bi bi-messenger text-primary"></i></a> Messenger</div>
+
+
+
+
+
+  
+  
+          <!-- tiêu đề -->
+
+         
+
+          
+            <!-- <div class="row"> -->
+            
+              <!-- <div class="col-lg-4"> -->
+              
+                  <!-- <img src="https://khamphadulichviet.com.vn/Uploads/28/images/logo1.png" class="d-block" alt="..." height="70"> -->
+                  <!-- <a href="./trangchu.html"><img src="https://khamphadulichviet.com.vn/Uploads/28/images/logo1.png" alt=""></a> -->
+              
+              <!-- </div>
+              <div class="col"> -->
+                
+                <nav class="navbar navbar-expand-lg position">
+                  <div class="container-fluid">
+                    <a class="navbar-brald" href="#"><img src="https://khamphadulichviet.com.vn/Uploads/28/images/logo1.png"  alt="..." width="300"></a>
+                  
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./trangchu.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./teambuiding.html">DỊCH VỤ ĐẶT VÉ MÁY BAY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            DU LỊCH TRONG NƯỚC
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./dulichmienbac.html">DU LỊCH MIỀN BẮC</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH MIỀN TRUNG</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH MIỀN NAM</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH THEO LOẠI HÌNH</a></li>
+                          </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            DU LỊCH NGOÀI NƯỚC
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./dulichchaua.html">DU LỊCH CHÂU Á</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH CHÂU ÂU</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH CHÂU MỸ</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH CHÂU ÚC</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH CHÂU PHI</a></li>
+                          </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            KHÁCH ĐOÀN
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">DU LỊCH DÀNH CHO CÔNG TY</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH KẾT HỢP VỚI TEAM BUIDING</a></li>
+                            <li><a class="dropdown-item" href="#">DU LỊCH CHO HỌC SINH-SINH VIÊN</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./dangnhap.html">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./giohangm.html">Giỏ hàng</a>
+                        </li>
+                      </ul>
+                     
+                    </div>
+                  </div>
+                </nav>
+              
+              <!-- </div> -->
+            <!-- <br></div> -->
+          
+<!-- thanh gọi ý -->
+<div class="row container">
+<div class="col-sm-5"><input class="form-control" type="text" placeholder="Chọn khu vực| thành phố" aria-label="default input example"><br></div>
+<div class="col-sm-3"><select class="form-select" aria-label="Default select example">
+  <option selected>Tour</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<br></div>
+<div class="col-sm-3"><select class="form-select" aria-label="Default select example">
+  <option selected>Điểm đến</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<br></div>
+<div class="col-lg-1"><button type="button" class="btn btn-primary">Tìm</button></div>
+
+
+</div>
+
+
+
+
+
+<br>
+<!-- chỉnh ảnh đầu -->
+<!-- <div class="">
+
+  <div id="carouselExample" class="carousel slide setTimeout(showSlides, 2000)">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/files/hanquoc.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/files/backinh(1).jpg" class="d-block w-100" alt="">
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div> -->
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/files/phuong-hong-co-tran.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/files/singapore.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/files/malaysia.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/files/nhatban.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/files/backinh(1).jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <br>
+    <br>
+
+
+
+    <!-- khung trang chủ -->
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text bg-primary-subtle" id="addon-wrapping">TOUR KHUYẾN MÃI</span>
+      <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" style="background-color: rgb(193, 237, 237);">
+    </div>
+
+<!-- ảnh1 -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">9%</div>
+<P>        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90%C3%A0%20N%E1%BA%B5ng%20-%20H%E1%BB%99i%20An/Du-lich-Da-Nang-Hoi-An3.jpg" class="card-img-top" alt="...">
+</P>        <div class="card-body">
+  <h5 class="card-title text-danger">Du lịch Đà Nẵng-Sơn Trà-Hội An</h5>
+  <div class="row">
+   <div class="col-7">
+     <p><i class="bi bi-gift"></i> 3 ngày 2 đêm</p>
+    <p><i class="bi bi-calendar-check"></i>Thứ 5 </p>
+    <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+   </div>
+
+   <div class="col-5">
+    <p>     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+    </p>
+    <p class="text-primary">2.050.000đ</p>
+     <p><del>2.250.000đ</del></p>
+   </div>
+   <a href="giohangm.html">themgh</a>
+  </div>
+</div>
+       
+      </div>
+    </div>
+<!-- Ảnh 2 sửa -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">11%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/H%C3%A0n%20Qu%E1%BB%91c/Du-lich-han-quoc-dao-nami3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          
+          <h5 class="card-title text-danger">DU LỊCH HÀN QUỐC MÙA HOA ANH ĐÀO</h5>
+          <div class="row">
+           <div class="col-7">
+             <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+             <p><i class="bi bi-calendar-check"></i> 17/5, 20/5 </p>
+             <p><i class="bi bi-person-circle"></i> Còn 19 chỗ </p>
+           </div>
+   
+           <div class="col-5">
+                  <P><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100"></P>
+                   <p class="text-primary">12.500.000đ</p>
+               <p><del>13.990.000đ</del></p>
+           </div>
+          </div>
+  </div>
+        
+      </div>
+    </div>
+    <!-- Anh3 sửa -->
+    <div class="col them">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">5%</div>
+        <p><img src="https://khamphadulichviet.com.vn/uploads/28/images/lager-Du-lich-thai-lan1.jpg" class="card-img-top" alt="...">
+        </p>
+        <div class="card-body">
+          <h5 class="card-title text-danger">DU LỊCH THÁI LAN GIÁ RẺ</h5>
+ <div class="row">
+  <div class="col-7">
+    <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+    <p><i class="bi bi-calendar-check"></i>Thứ 4&6 hàng tuần </p>
+    <p><i class="bi bi-person-circle"></i> Còn 6 chỗ </p> 
+  </div>
+  <div class="col-5">
+    <p>    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">     </p>
+    <p class="text-primary gia">7.590.000đ</p>
+        <p><del>7.990.000đ</del></p>
+        
+  </div>
+  
+ </div>
+</div>
+        
+      </div>
+    </div>
+
+    <!-- anh4 -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">5%</div>
+        <img src="https://khamphadulichviet.com.vn/uploads/28/images/lager-phuong-hoang-co-tran-07160344.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-danger">TRƯƠNG GIA GIỚI-MIÊU TRẠI-PHƯỢNG HOANGGF CỔ TRẤN-THIÊN MÔN SƠN-HỒ BẢO PHONG</h5>
+     <div class="row">
+      <div class="col-7">
+        <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+       <p><i class="bi bi-calendar-check"></i> Thứ5,7 hàng tuần</p>
+       <p><i class="bi bi-person-circle"></i> Còn 9 chỗ </p>
+      </div>
+
+      <div class="col-5">
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100"></p>
+        <p class="text-primary">9.990.000đ</p>
+        <p><del>10.490.000đ</del></p>
+      </div>
+     </div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- đây anh1 -->
+
+
+<br>
+
+
+<!-- test -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">9%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/%C4%90%C3%A0i%20Loan/du-lich-dai-loan-ho-nhat-nguyet.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-danger">DU LỊCH ĐÀI LOAN MÙA HOA ANH ĐÀO</h5>
+                <div class="row">
+                 <div class="col-7">
+                   <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+                  <p><i class="bi bi-calendar-check"></i> Thứ5,7 hàng tuần</p>
+                  <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+                 </div>
+           
+                 <div class="col-5">
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="80"></p>                   
+      <p class="text-primary">11.990.000đ</p>
+                   <p><del>12.990.000đ</del></p>
+                 </div>
+                </div>
+</div>
+       
+      </div>
+    </div>
+<!-- Ảnh 2 sửa -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">11%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/Singapore/du-lich-singapore-malaysia07.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          
+          <h5 class="card-title text-danger">DU LỊCH ĐÀI LOAN MÙA HOA ANH ĐÀO</h5>
+     <div class="row">
+      <div class="col-7">
+        <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+       <p><i class="bi bi-calendar-check"></i> Thứ5,7 hàng tuần</p>
+       <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+      </div>
+
+      <div class="col-5">
+        <p>   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="80">
+        </p>
+        <p class="text-primary">11.990.000đ</p>
+        <p><del>12.990.000đ</del></p>
+      </div>
+     </div>
+      
+  </div>
+        
+      </div>
+    </div>
+    <!-- Anh3 sửa -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">12%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/H%C3%A0n%20Qu%E1%BB%91c/Du-lich-han-quoc-thap-Namsan3.jpg" class="card-img-top" alt="...">
+        
+        <div class="card-body">
+          <h5 class="card-title text-danger">DU LỊCH HÀN QUỐC-SEOUL-ĐẢO GANGHUWA-EVERLAND</h5>
+ <div class="row">
+  <div class="col-7">
+    <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+    <p><i class="bi bi-calendar-check"></i>9/1, 13/2, 17/2, 19/3 </p>
+    <p><i class="bi bi-person-circle"></i> Còn 20 chỗ </p> 
+  </div>
+  <div class="col-5">
+    <p>    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">     </p>
+    <p class="text-primary">11.990.000đ</p>
+        <p><del>13.490.000đ</del></p>
+  </div>
+ </div>
+</div>
+        
+      </div>
+    </div>
+
+    <!-- anh4 -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">5%</div>
+        <img src="https://khamphadulichviet.com.vn/uploads/28/images/lager-phuong-hoang-co-tran-07160344.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-danger">TRƯƠNG GIA GIỚI-MIÊU TRẠI-PHƯỢNG HOANGGF CỔ TRẤN-THIÊN MÔN SƠN-HỒ BẢO PHONG</h5>
+     <div class="row">
+      <div class="col-7">
+        <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+       <p><i class="bi bi-calendar-check"></i> Thứ5,7 hàng tuần</p>
+       <p><i class="bi bi-person-circle"></i> Còn 9 chỗ </p>
+      </div>
+
+      <div class="col-5">
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100"></p>
+        <p class="text-primary">9.990.000đ</p>
+        <p><del>10.490.000đ</del></p>
+      </div>
+     </div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- tab2 test -->
+<br>
+<!-- tab3 ảnh chính -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">11%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/T%C3%A2y%20Nguy%C3%AAn/Nha-rong-tay-nguyen.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-danger">DU LỊCH TÂY NGUYÊN HUYỀN THOẠI </h5>
+                <div class="row">
+                 <div class="col-7">
+                   <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+                  <p><i class="bi bi-calendar-check"></i> 29/05/2023</p>
+                  <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+                 </div>
+           
+                 <div class="col-5">
+      <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100"></p>                   
+      <p class="text-primary">4.690.000đ</p>
+                   <p><del>5.290.000đ</del></p>
+                 </div>
+                </div>
+</div>
+       
+      </div>
+    </div>
+<!-- Ảnh 2 sửa -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">11%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/Myanmar/du-lich-myanmar-golden-rock1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          
+          <h5 class="card-title text-danger">DU LỊCH MYANMAR GIÁ RẺ </h5>
+     <div class="row">
+      <div class="col-7">
+        <p><i class="bi bi-gift"></i> 4 ngày 4 đêm</p>
+       <p><i class="bi bi-calendar-check"></i> 06,12,20,27/2</p>
+       <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+      </div>
+
+      <div class="col-5">
+        <p>   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100"></p>
+        <p class="text-primary">8.990.000đ</p>
+        <p><del>9.990.000đ</del></p>
+      </div>
+     </div>
+      
+  </div>
+        
+      </div>
+    </div>
+    <!-- Anh3 sửa -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">11%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/Trung%20Qu%E1%BB%91c/Phuong-Hoang-Co-Tran1.jpg" class="card-img-top" alt="...">
+        
+        <div class="card-body">
+          <h5 class="card-title text-danger">DU LỊCH PHƯỢNG HOÀNG CỔ TRẤN GIÁ RẺ- ĐƯỜNG BAY</h5>
+ <div class="row">
+  <div class="col-7">
+    <p><i class="bi bi-gift"></i> 6 ngày 5 đêm</p>
+    <p><i class="bi bi-calendar-check"></i>9/1, 13/2, 17/2, 19/3 </p>
+    <p><i class="bi bi-person-circle"></i> Còn 5 chỗ </p> 
+  </div>
+  <div class="col-5">
+    <p>    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">     </p>
+    <p class="text-primary">10.690.000đ</p>
+        <p><del>11.990.000đ</del></p>
+  </div>
+ </div>
+</div>
+        
+      </div>
+    </div>
+
+    <!-- anh4 -->
+    <div class="col">
+      <div class="card h-100">
+        <div class="badge text-bg-danger position-absolute top-0 end-0">5%</div>
+        <img src="https://khamphadulichviet.com.vn/Uploads/28/files/lager-dubai3-10150442.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-danger">DU LỊCH DUBAI GIÁ RẺ-DUBAI- AHabi- Safari</h5>
+     <div class="row">
+      <div class="col-7">
+        <p><i class="bi bi-gift"></i> 6 ngày 5 đêm</p>
+       
+       <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+      </div>
+
+      <div class="col-5">
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100"></p>
+        <p class="text-primary">23.490.000đ</p>
+        <p><del>24.490.000đ</del></p>
+      </div>
+     </div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- kết thúc tab3 -->
+<br>
+
+
+
+    
+<!-- thanh chạy -->
+  <!-- tab2  -->
+  <!-- <br><div class="container" style="background-color: blanchedalmond;">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">TOUR NỔI BẬT NƯỚC NGOÀI</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">TOUR NỔI BẬT TRONG NƯỚC</button>
+  </li>
+ 
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><div class="row">
+    <br>
+
+    
+     <div class="col-sm-4"><div class="card">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="badge text-bg-danger position-absolute top-0 end-0">11%</div> 
+          <img src="https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-sin-ma-indo1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-danger">DU LỊCH Sigapore-Malaysia-Indonesia từ Đà Nẵng</h5>
+           <div class="row">
+            <div class="col-8">
+              <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+          
+          <p><i class="bi bi-person-circle"></i> Còn 15 chỗ </p>
+            </div>
+    
+            <div class="col-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+
+              <p class="text-primary">11.990.000đ</p>
+            <p><del>12.990.000đ</del></p>
+            </div>
+           </div>
+            
+          </div>
+        </div>
+      </div>
+    
+     anh2tab2 
+    <br> <div class="col-sm-4"><div class="card">
+      <div class="badge text-bg-danger position-absolute top-0 end-0">9%</div> 
+      <img src="https://khamphadulichviet.com.vn/uploads/28/images/lager-Du-lich-Nhat-Ban.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-danger">Du lịch Nhật Bản Giá Rẻ Mùa Hoa Anh Đào - Bay vietjet</h5>
+       <div class="row">
+        <div class="col-8">
+          <p><i class="bi bi-gift"></i> 6 ngày 5 đêm</p>
+          <p><i class="bi bi-calendar-check"></i> 17/5, 20/5, 27/5 </p>
+          <p><i class="bi bi-person-circle"></i> Còn 7 chỗ </p>
+        </div>
+    
+        <div class="col-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+
+          <p class="text-primary">29.990.000đ</p>
+          <p><del>32.990.000đ</del></p>
+        </div>
+       </div>
+        
+      </div>
+    </div>
+    </div>
+    
+     anh3tab2 
+    <br> <div class="col-sm-4"><div class="card">
+      <div class="badge text-bg-danger position-absolute top-0 end-0">10%</div> 
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/images/thien-ho-mieu-trai1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-danger">Du lịch Nam Ninh - Tiểu Thất Khống - Thiên Hộ Miêu Trại</h5>
+       <div class="row">
+        <div class="col-8">
+          <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+          <p><i class="bi bi-calendar-check"></i> Thứ 4 hàng tuần </p>
+          <p><i class="bi bi-person-circle"></i> Còn 4 chỗ </p>
+        </div>
+    
+        <div class="col-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+
+          <p class="text-primary">8.990.000đ</p>
+          <p><del>9.990.000đ</del></p>
+        </div>
+       </div>
+        
+      </div>
+    </div>
+    </div>
+    </div></div>
+ tanh chạy
+     tab3 
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><div class="row">
+    <br> <div class="col-sm-4"><div class="card">
+      <div class="badge text-bg-danger position-absolute top-0 end-0">21%</div> 
+          <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Qu%E1%BA%A3ng%20B%C3%ACnh/Dong-Phong-Nha1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-danger">Du Lịch Huế- Động Thiên Đường</h5>
+           <div class="row">
+            <div class="col-8">
+              <p><i class="bi bi-gift"></i> 2 ngày 1 đêm</p>
+          <p><i class="bi bi-calendar-check"></i> Thứ 2 và thứ 6 hàng tuần </p>
+          <p><i class="bi bi-person-circle"></i> Còn 20 chỗ </p>
+            </div>
+    
+            <div class="col-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+
+              <p class="text-primary">1.390.000đ</p>
+              <p><del>1.750.000đ</del></p>
+            </div>
+           </div>
+            
+          </div>
+        </div>
+      </div>
+    
+     anh2tab2 
+    <br> <div class="col-sm-4"><div class="card">
+      <div class="badge text-bg-danger position-absolute top-0 end-0">7%</div> 
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90i%E1%BB%87n%20Bi%C3%AAn/du-lich-dien-bien-3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-danger">Du Lịch Mai Châu- Mộc Châu- Điện Biên- Sapa</h5>
+       <div class="row">
+        <div class="col-8">
+          <p><i class="bi bi-gift"></i> 4 ngày 3 đêm</p>
+          <p><i class="bi bi-calendar-check"></i> Thứ 5 hàng tuần</p>
+          <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+        </div>
+    
+        <div class="col-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+
+          <p class="text-primary">4.990.000đ</p>
+            <p><del>5.350.000đ</del></p>
+        </div>
+       </div>
+        
+      </div>
+    </div>
+    </div>
+    
+     anh3tab2 
+    <br> <div class="col-sm-4"><div class="card">
+      <div class="badge text-bg-danger position-absolute top-0 end-0">3%</div> 
+      <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Hu%E1%BA%BF/Du-lich-Hue-Dai-noi1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-danger">Du Lịch Đà Nẵng- Bà Nà- Hội An- Huế- Động Thiên Đường/Phong Nha</h5>
+       <div class="row">
+        <div class="col-8">
+          <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+          <p><i class="bi bi-calendar-check"></i> Thứ 4 và thứ 7 hàng tuần </p>
+          <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+        </div>
+    
+        <div class="col-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+
+          <p class="text-primary">3.390.000đ</p>
+            <p><del>3.590.000đ</del></p>
+        </div>
+       </div>
+        
+      </div>
+    </div>
+    </div>
+    </div></div>
+ 
+</div>
+
+
+  </div> -->
+
+  <!-- test khung tab-->
+<div class="container">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">TOUR NỔI BẬT NƯỚC NGOÀI</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">TOUR NỔI BẬT TRONG NƯỚC</button>
+    </li>
+   
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <!-- ảnh tab1 -->
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="badge text-bg-danger position-absolute top-0 end-0">8%</div> 
+            <img src="https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-sin-ma-indo1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-danger">DU LỊCH Sigapore-Malaysia-Indonesia từ Đà Nẵng</h5>
+           <div class="row">
+            <div class="col-8">
+              <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+          
+          <p><i class="bi bi-person-circle"></i> Còn 15 chỗ </p>
+            </div>
+    
+            <div class="col-4">
+<p>              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+</p>
+              <p class="text-primary">11.990.000đ</p>
+            <p><del>12.990.000đ</del></p>
+            </div>
+           </div>
+          </div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="badge text-bg-danger position-absolute top-0 end-0">13%</div> 
+            <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/%C4%90%C3%A0i%20Loan/Du-lich-Dai-Loan-phat-quang-son1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-danger">DU LỊCH ĐÀI LOAN MÙA HOA ANH ĐÀO</h5>
+           <div class="row">
+            <div class="col-8">
+              <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+          
+          <p><i class="bi bi-calendar-check"></i> 21/2, 22/2, 28/2, 29/2, 6/3, 7/3 </p>
+          
+          <P><i class="bi bi-person-circle"></i> Còn 20 chỗ</P>
+            </div>
+    
+            <div class="col-4">
+<p>              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+</p>
+              <p class="text-primary">10.490.000đ</p>
+            <p><del>11.990.000đ</del></p>
+            </div>
+           </div></div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="badge text-bg-danger position-absolute top-0 end-0">9%</div> 
+            <img src="https://khamphadulichviet.com.vn/uploads/28/images/lager-Du-lich-Nhat-Ban.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-danger">DU LỊCH NHẬT BẢN GIÁ RẺ MÙA HOA ANH ĐÀO- BAY VIetject</h5>
+           <div class="row">
+            <div class="col-8">
+              <p><i class="bi bi-gift"></i> 6 ngày 5 đêm</p>
+              <p><i class="bi bi-calendar-check"></i> 17/3, 24/3, 31/3, 7/4 </p>
+          <p><i class="bi bi-person-circle"></i> Còn 6 chỗ </p>
+            </div>
+    
+            <div class="col-4">
+<p>              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+</p>
+              <p class="text-primary">29.990.000đ</p>
+            <p><del>32.990.000đ</del></p>
+            </div>
+           </div>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hết tab1 -->
+    <!-- tab2 -->
+      <!-- tabtrong nuowcs -->
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="badge text-bg-danger position-absolute top-0 end-0">21%</div> 
+            <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Qu%E1%BA%A3ng%20B%C3%ACnh/Dong-Phong-Nha1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-danger">DU LỊCH HUẾ ĐỘNG THIÊN ĐƯỜNG</h5>
+           <div class="row">
+            <div class="col-8">
+              <p><i class="bi bi-gift"></i> 2 ngày 1 đêm</p>
+
+              <p><i class="bi bi-calendar-check"></i> Thứ2& 6 Hàng Tuần</p>
+          <p><i class="bi bi-person-circle"></i> Còn 6 chỗ </p>
+            </div>
+    
+            <div class="col-4">
+<p>              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+</p>
+              <p class="text-primary">1.390.000đ</p>
+            <p><del>1.750.000đ</del></p>
+            </div>
+           </div></div>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="badge text-bg-danger position-absolute top-0 end-0">7%</div> 
+            <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90i%E1%BB%87n%20Bi%C3%AAn/du-lich-dien-bien-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-danger">DU LỊCH MAI CHÂU- MỘC CHÂU- ĐIỆN BIÊN- SAPA</h5>
+              <div class="row">
+               <div class="col-8">
+                 <p><i class="bi bi-gift"></i> 4 ngày 3 đêm</p>
+                 <p><i class="bi bi-calendar-check"></i> Thứ 5 Hàng Tuần</p>
+             <p><i class="bi bi-person-circle"></i> Còn 10 chỗ </p>
+               </div>
+       
+               <div class="col-4">
+   <p>              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+   </p>
+                 <p class="text-primary">4.990.000đ</p>
+               <p><del>5.350.000đ</del></p>
+               </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      
+        <div class="col">
+          <div class="card h-100">
+            <div class="badge text-bg-danger position-absolute top-0 end-0">3%</div> 
+            <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Hu%E1%BA%BF/Du-lich-Hue-Dai-noi1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-danger">DU LỊCH ĐÀ NẴNG- BÀ NÀ- HỘI AN- HUẾ- ĐỘNG THIÊN ĐƯỜNG/ PHONG NHA</h5>
+              <div class="row">
+               <div class="col-8">
+                 <p><i class="bi bi-gift"></i> 5 ngày 4 đêm</p>
+                 <p><i class="bi bi-calendar-check"></i> Thứ 4&7 Hàng Tuần </p>
+             <p><i class="bi bi-person-circle"></i> Còn 15 chỗ </p>
+               </div>
+       
+               <div class="col-4">
+   <p>              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+   </p>
+                 <p class="text-primary">3.390.000đ</p>
+               <p><del>3.500.000đ</del></p>
+               </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hết tab2 -->
+    </div>
+</div>
+<br> 
+<br>
+
+
+
+
+<!-- khung chạy gt -->
+<div class="container">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+<!-- bắt đầu -->
+<div class="row">
+  <div class="col-sm-6">
+    <!-- dây -->
+    <div class="card mb-3" style="max-width: 100%;">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/Malaysia/du-lich-malaysia-pulau-tioman-1.jpg" class="img-fluid " alt="...">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Kinh Nghiệm Du Lịch Malaysia từ A-Z</h5>
+            <hr>
+            <p class="card-text">Là một đo thị trẻ, cũng là bức tranh sinh hoạt nhiều sắc màu của những tộc</p>
+            <button>xem thêm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="col-sm-6">
+    <!-- dây -->
+    <div class="card mb-3" style="max-width: 100%;">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/Th%C3%A1i%20Lan/du-lich-thailand-2.jpg" class="img-fluid " alt="..." style="height: 298px;">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Những Điểm Đến Không Thể Bỏ Qua Khi Du Lịch Thái Lan</h5>
+            <hr>
+            <p>Du lịch- Thái Lan nơi được mệnh danh đất nước của nụ cười</p>
+            <button>xem thêm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+      <!-- ketthucs -->
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- dây -->
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row">
+              <div class="col-md-8">
+                <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/C%C3%A1t%20B%C3%A0/du-l%E1%BB%8Bch-c%C3%A1t-b%C3%A0-1.jpg" class="img-fluid " alt="..." style="height: 298px;">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Kinh Nghiệm Du Lịch Cát Bà từ A-Z</h5>
+                  <hr>
+                  <p class="card-text">Kinh nghiệm du lịch cát bà a-z xẽ dúp cho bạn những kiến thức </p>
+                  <button>xem thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-sm-6">
+          <!-- dây -->
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row">
+              <div class="col-md-8">
+                <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/C%E1%BB%ADa%20L%C3%B2/du-l%E1%BB%8Bch-c%E1%BB%ADa-l%C3%B2-1.jpg" class="img-fluid " alt="..." style="height: 298px;">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Kinh Nghiệm Du Lịch Của Lò</h5>
+                  <hr>
+                  <button> xem thêm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      
+<!-- bắt đầu -->
+<div class="row">
+  <div class="col-sm-6">
+    <!-- dây -->
+    <div class="card mb-3" style="max-width: 100%;">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/S%E1%BA%A7m%20S%C6%A1n/du-l%E1%BB%8Bch-s%E1%BA%A7m-s%C6%A1n-1.jpg" class="img-fluid " alt="..." style="height: 298px;"> 
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Kinh Nghiệm Du Lịch Sầm Sơn từ A-Z</h5>
+            <hr>
+            <p class="card-text">Kinh nghiệm du lịch Sầm Sơn từ A-Z sẽ giúp các gia đình trang bị những kiến thức</p>
+            <button>xem thêm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="col-sm-6">
+    <!-- dây -->
+    <div class="card mb-3" style="max-width: 100%;">
+      <div class="row">
+        <div class="col-md-8">
+          <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/Indonesia/du-lich-indonesia-Togean.jpg" class="img-fluid " alt="..." style="height: 298px;">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Kinh Nghiệm Du Lịch Bali từ A-Z</h5>
+            <hr>
+            <p>Được biết đến cái tên là thiên đường nghỉ mát </p>
+            <button>xem thêm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!-- test -->
+
+
+
+<!-- ban đồ -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title img-fluid"><div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4647070399224!2d106.62438847480603!3d10.8522159893012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b161f50ae47%3A0x2328d1d1acc3b11a!2sFPT%20Polytechnic%20TP.HCM%20-%20T%C3%B2a%20F!5e0!3m2!1svi!2s!4v1715669032506!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Khám Phá Du Lịch Việt: là tập thể gắn kết, năng động, Với đội ngũ nhân viên giàu kinh nghiệm, tận tình với khách hàng. Chúng tôi những con người có đam mê, nhiệt huyết với nghề luôn tìm tòi, sáng tạo đưa ra nhiều sản phẩm tour du lịch trong nước và tour du lịch nước ngoài có chất lượng dịch vụ tốt nhất, được khách hàng tin tưởng.</h6>
+   <br>
+   
+    <div class="row">
+
+    <div class="col-sm-4 bg-warning img-thumbnail" style="border: 1em soid black;"><P class="text-center">CHI NHÁNH HÀ NỘI</P>
+<p><i class="bi bi-geo-alt"></i> 85 Nghĩa Dũng, Ba Đình Hà,Nội</p>
+<p><i class="bi bi-telephone"></i> (08)69207701</p>
+<p><i class="bi bi-envelope"></i> Vanlong16@gmail.com</p>
+    </div><br>
+    <div class="col-sm-4  margin-left-4"><P class="text-center">Chi nhánh Đà Nẵng</P>
+    <P><i class="bi bi-geo-alt"></i>9 Đinh Thị Vân, An Khê, Thanh Khê, Đà Nẵng </P>
+    <p><i class="bi bi-telephone"></i> +84968934528</p>
+    <P><i class="bi bi-envelope"></i> sale@khamphadulich@gmail.com</P>
+    
+    </div>
+    <div class="col-sm-4 bg-warning">Chi nhánh TP.HCM
+    <p class="card-text"><i class="bi bi-geo-alt"></i> 13-15 Bàu Cát 4, Quận Tân Bình,HCM</p>
+    <p><i class="bi bi-telephone"></i>0869207701</p>
+    <p><i class="bi bi-envelope"></i>info@khamphadulich.com.vn</p>
+  </div>
+</div>
+  </div>
+</div>
+<br>
+<!-- video -->
+<div class="container">
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text bg-info" id="addon-wrapping">Video</span>
+    <input type="text" class="form-control g-secondary-subtle" placeholder="" aria-label="Username" aria-describedby="addon-wrapping">
+  </div>
+  <br>
+<div class="row ">
+  <div class="col-sm-6 d-none d-sm-block">
+          <iframe width="610" height="715" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe>
+          
+  </div>
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col-6 d-none d-sm-block"> <!--!từ d-none trở đi có chức năng ẩn trên dt -->
+    <iframe  width="300" height="355" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe>
+    <iframe  width="300" height="355" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe>
+  </div>
+  
+  <div class="col-6 d-none d-sm-block">
+    <iframe width="300" height="355" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe>
+  </div>
+  </div>
+</div>
+
+</div>
+<!-- trên đt -->
+<div class="row d-block d-sm-none">
+  <div class="col-sm-6">
+          <iframe width="370" height="400" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe>
+          
+  </div>
+  <div class="col-sm-6 ">
+    <div class="row">
+      <div class="col-6"> <!--!từ d-none trở đi có chức năng ẩn trên dt -->
+    <iframe class="img-fluid"  width="300" height="355" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe>
+    <!-- <iframe width="300" height="355" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe> -->
+  </div>
+  
+  <div class="col-6">
+    <iframe class="img-fluid" width="300" height="355" src="https://www.youtube.com/embed/gQSWpqWA7qs" title="DU LỊCH và KHÁM PHÁ 10 Địa Điểm Nổi Tiếng, Vui và Đẹp Nhất tại Việt Nam. Top 10 Places in Vietnam."  allowfullscreen></iframe>
+  </div>
+  </div>
+</div>
+
+</div>
+</div>
+<br>
+
+
+
+
+
+  <!-- thành cuối -->
+  <div class="card text-bg-primary mb-3" style="max-width:100">
+  
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-3"><img src="https://khamphadulichviet.com.vn/Uploads/28/images/logo1.png" alt="">
+        <br>
+        <br>
+        <div class="text-center">Theo dõi chúng tôi <br>
+          <!-- gắn ảnh -->
+          <i class="bi bi-facebook"></i> &ensp;
+          <i class="bi bi-twitter"></i> &ensp;
+          <i class="bi bi-youtube"></i> &ensp;
+          <i class="bi bi-instagram"></i> &ensp;
+        </div>              
+        </div>
+        
+        
+        <div class="col-sm-3"><h6>KHÁM PHÁ DU LỊCH VIỆT</h6>
+        
+       <p> Address: 85 Nghĩa Dũng, Ba Đình Hà Nội </p>
+        <p> Phone(086)9207701 <p>
+        <p>
+        Email: Vanlong16@gmail.com
+        <p>
+        
+        </div>
+        <div class="col-3 img-fluid"><h6>Social</h6>
+       <p> Facebook <p>
+        <p>Instagram <p>
+        <p>twitter <p>
+        </div>
+        <div class="col-3 col-sm-2"><H6>Link</H6>
+        <p>Trang chủ <p>
+        <p>Giới thiệu <p>
+        Liên hệ
+        </div>
+
+
+      </div>
+     
+      
+    </div>
+    
+
+
+    
+
+  </body>
+</html>

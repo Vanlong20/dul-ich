@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch miền bắc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <style>
+ 
+
+/* img:hover {
+  width: 310px;
+  height: 200px;
+  transition: all 0.1s ease;
+  } */
+        .moi{
+        position:absolute;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          padding: 10px;
+          z-index: 1000;
+          margin-bottom: 20px;
+      
+        }
+        .zalo{
+          position:absolute;
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          padding: 10px;
+          z-index: 1000;
+          margin-bottom: 20px;
+          width: 120px;
+        }
+      </style>
+    
+</head>
+<body>
+    <div class="moi bg-warning rounded-3 text-light"><i class="bi bi-telephone"></i> 0869 207 701</div>
+    <div class="zalo bg-warning rounded-3 text-light"><a href="https://www.messenger.com/t/100007198239459"><i class="bi bi-messenger text-primary"></i></a> Messenger</div>
+    <nav class="navbar navbar-expand-lg position">
+        <div class="container-fluid">
+          <a class="navbar-brald" href="#"><img src="https://khamphadulichviet.com.vn/Uploads/28/images/logo1.png"  alt="..." width="300"></a>
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./trangchu.html">TRANG CHỦ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TEAM BUIDLDING</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DU LỊCH TRONG NƯỚC
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./dulichmienbac.html">DU LỊCH MIỀN BẮC</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH MIỀN TRUNG</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH MIỀN NAM</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH THEO LOẠI HÌNH</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DU LỊCH NGOÀI NƯỚC
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">DU LỊCH CHÂU Á</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH CHÂU ÂU</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH CHÂU MỸ</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH CHÂU ÚC</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH CHÂU PHI</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  KHÁCH ĐOÀN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">DU LỊCH DÀNH CHO CÔNG TY</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH KẾT HỢP VỚI TEAM BUIDING</a></li>
+                  <li><a class="dropdown-item" href="#">DU LỊCH CHO HỌC SINH-SINH VIÊN</a></li>
+                </ul>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <!-- tìm kiếm -->
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-5"><input class="form-control" type="text" placeholder="Chọn khu vực| thành phố" aria-label="default input example"><br></div>
+        <div class="col-sm-3"><select class="form-select" aria-label="Default select example">
+          <option selected>Tour</option>
+          <optgroup label="DU LỊCH TRONG NƯỚC"></optgroup>
+          
+          
+          <option value="1">Du Lịch Miền Bắc</option>
+          <option value="2">Du Lịch Miền Trung</option>
+          <option value="3">Du Lịch Miền Nam</option>
+          <option value="4">Du Lịch Theo Loại Hình</option>
+          <option value="5">Du Lịch Miền Nam</option>
+          <hr>
+          <optgroup label="Du Lịch Nước Ngoài"></optgroup>
+          <option value="6">Du Lịch Châu Á</option>
+          <option value="6">Du Lịch Châu Âu</option>
+          <option value="6">Du Lịch Châu Mỹ</option>
+          <option value="6">Du Lịch Châu ÚC</option>
+          
+        </select>
+        <br></div>
+        <div class="col-sm-3"><select class="form-select" aria-label="Default select example">
+          <option selected>Điểm đến</option>
+          <Optgroup label="Việt Nam"></Optgroup>
+          <option value="">SA PA</option>
+          <option value="2">Đà Lạt</option>
+          <option value="3">Đà Nẵng</option>
+          <option value="3">Hội An</option>
+          <option value="3">Hà Nội</option>
+          <option value="3">Cát BÀ</option>
+          <option value="3">Phú Quốc</option>
+          <option value="3">Du Thuyền Hạ Long</option>
+          <optgroup label="Châu Á"></optgroup>
+          <option value="3">Thái Lan</option>
+          <option value="3">Singapore</option>
+          <option value="3">Malaysia</option>
+          <option value="3">Indonesia</option>
+          <option value="3">Hồng Công</option>
+          <option value="3">Brunei</option>
+        </select>
+        <br></div>
+        <div class="col-lg-1"><button type="submit" class="btn btn-primary">Tìm</button></div>
+        
+    </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+        <a href="trangchu.html">Trang chủ</a>/ Du LỊCH TRONG NƯỚC/ DU LỊCH MIỀN BẮC
+       <br> <P>DU LỊCH MIỀN BẮC</P>
+        <br><br>
+        <div class="row">
+            <div class="col-3 d-none d-sm-block">
+                  <nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="#"><div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 2 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 3 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 4 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 5 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 6 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 7 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Chủ nhật hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Hàng ngày
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 2 và thứ 6 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 5 và thứ 7 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 3, Chủ nhật hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 6 và Chủ nhật hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 4 và thứ 7 hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 5 và Chủ nhật hàng tuần
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Thứ 4 và thứ 7 hàng tuần
+                            </label>
+                          </div></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <!-- kết thức -->
+                <h5>Lịch Khỏi Hành</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Theo yêu cầu
+                    </label>
+                  </div>
+                 
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 2 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 3 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 4 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 5 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 6 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 7 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Chủ nhật hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Hàng ngày
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 2 và thứ 6 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 5 và thứ 7 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 3, Chủ nhật hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 6 và Chủ nhật hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 4 và thứ 7 hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 5 và Chủ nhật hàng tuần
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Thứ 4 và thứ 7 hàng tuần
+                    </label>
+                  </div>
+            </div>
+            <!-- thanh hình ảnh -->
+            <div class="col-9 container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      
+                       
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">13%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Cao%20B%E1%BA%B1ng/th%C3%A1c-b%E1%BA%A3n-gi%E1%BB%91c-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">DU LỊCH CAO BẰNG - TỊNH TÂY TRUNG QUỐC</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 6 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Hết chỗn</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">3.490.000đ</p>
+                                <del>3.990.000đ</del>
+                        </div>
+                    </div>
+                    </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">10%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/Du-lich-sapa-fansipan-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Sapa - Fansipan Giá Rẻ</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Hàng ngày</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 15 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">2.690.000đ</p>
+                                <del>2.990.000đ</del>
+                        </div>
+                    </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">12%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/Du-lich-ha-giang-10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Hà Giang</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 4 Ngày 3 Đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 5 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">3.490.000đ</p>
+                                <del>3.950.000</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <!-- <br> 3 tấm tiếp theo -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">16%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Y%C3%AAn%20B%C3%A1i/M%C3%B9-C%C4%83ng-Ch%E1%BA%A3i-M%C3%B9a-L%C3%BAa-ch%C3%ADn-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Mù Cang Chải - Ô Quy Hồ - Sapa</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 6 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">2.850.000đ</p>
+                                <del>3.390.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">29%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/M%E1%BB%99c%20Ch%C3%A2u/du-lich-moc-chau-san-may-ta-xua-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Mộc Châu - Săn Mây Tà Xùa</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 2 Ngày 1 Đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 7 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 15 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">1.690.000đ</p>
+                                <del>2.390.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">13%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Cao%20B%E1%BA%B1ng/C%E1%BB%B1u-ch%C3%A2u-c%E1%BB%95-tr%E1%BA%A5n-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du lịch Cao Bằng - Pắc Pó - Tịnh Tây Trung Quốc - Thác Bản Giốc - Ngườm Ngao</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 6 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">3.990.000đ</p>
+                                <del>4.590.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <!-- 6 tấm  -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">13%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/M%E1%BB%99c%20Ch%C3%A2u/Du-lich-m%E1%BB%99c-ch%C3%A2u-6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Tour Du lịch Vòng Cung Tây Bắc</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 4 Ngày 3 Đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 5 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">3.990.000đ</p>
+                                <del>4.590.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">15%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/Ho%C3%A0ng-su-ph%C3%AC-5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Hoàng Su Phì - Simacai - Bắc Hà</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 6 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">3.890.000đ</p>
+                                <del>4.590.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">9%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90i%E1%BB%87n%20Bi%C3%AAn/du-lich-dien-bien-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Mộc Châu - Sơn La - Điện Biên</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 4 Ngày 3 Đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 5 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 15 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">3.650.000đ</p>
+                                <del>3.990.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <!-- 12 tấm ảnh -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">13%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90%C3%B4ng%20-%20T%C3%A2y%20B%E1%BA%AFc/Ho%C3%A0ng-su-ph%C3%AC-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du lịch Hoàng Su Phì - Xín Mần - Bắc Hà Mùa Lúa Chín</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 6 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">3.490.000đ</p>
+                                <del>3.990.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">9%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/S%C4%83n-m%C3%A2y-y-t%C3%BD-l%C3%A0o-cai-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Mai Châu - Mộc Châu - Điện Biên - Sapa - Fansipan - Y Tý</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 5 ngày 4 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 4 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">5.990.000đ</p>
+                                <del>6.590.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">9%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/du-lich-sapa-cho-bac-ha-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Mai Châu - Mộc Châu - Điện Biên - Lai Châu - Sapa - Bắc Hà</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 5 ngày 4 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 4 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">6.390.000đ</p>
+                                <del>6.990.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <!-- 15 tấm -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">12%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90i%E1%BB%87n%20Bi%C3%AAn/du-lich-dien-bien-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Điện Biên - Sơn La</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 6 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">2.890.000đ</p>
+                                <del>3.290.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">10%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90i%E1%BB%87n%20Bi%C3%AAn/du-lich-dien-bien-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du lịch Điện Biên Mùa Hoa Ban Trắng</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 3 ngày 2 đêm</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Thứ 6 hàng tuần</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 20 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">2.650.000đ</p>
+                                <del>2.950.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="badge text-bg-danger position-absolute top-0 end-0">26%</div> 
+                        <img src="https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Ninh%20B%C3%ACnh/Du-lich-tam-coc-ninh-binn-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Du Lịch Hoa Lư - Tam Cốc</h5>
+                          <div class="row">
+                            <div class="col-7">
+                                <span><i class="bi bi-gift"></i> 1 Ngày</span><p></p>
+                                <p><i class="bi bi-calendar-check"></i> Hàng ngày</p>
+                                <p><i class="bi bi-person-circle"></i> Còn 15 chỗ</p>
+                        </div>
+                            <div class="col-5">
+                                <p>            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNP5ZwXBcFcC6ZWUUl1tBKcztjnTsyzaeBGCr3mA1g1hUdujQ-FtPSJE5nEum8Q-nFw&usqp=CAU" alt="" width="100">
+                                </p>
+                                <p class="text-danger">890.000đ</p>
+                                <del>1.200.000đ</del>
+                        </div>
+                    </div>                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+
+
+        </div>
+    </div><br>
+    <!-- padintion -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    
+    <!-- thanh cuối -->
+    <div class="card text-bg-primary mb-3" style="max-width:100">
+  
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-3"><img src="https://khamphadulichviet.com.vn/Uploads/28/images/logo1.png" alt="">
+            <br>
+            <br>
+            <div class="text-center">Theo dõi chúng tôi <br>
+              <!-- gắn ảnh -->
+              <i class="bi bi-facebook"></i> &ensp;
+              <i class="bi bi-twitter"></i> &ensp;
+              <i class="bi bi-youtube"></i> &ensp;
+              <i class="bi bi-instagram"></i> &ensp;
+            </div>              
+            </div>
+            
+            
+            <div class="col-sm-3"><h6>KHÁM PHÁ DU LỊCH VIỆT</h6>
+            
+           <p> Address: 85 Nghĩa Dũng, Ba Đình Hà Nội </p>
+            <p> Phone(086)9207701 <p>
+            <p>
+            Email: Vanlong16@gmail.com
+            <p>
+            
+            </div>
+            <div class="col-3 img-fluid"><h6>Social</h6>
+           <p> Facebook <p>
+            <p>Instagram <p>
+            <p>twitter <p>
+            </div>
+            <div class="col-3 col-sm-2"><H6>Link</H6>
+            <p>Trang chủ <p>
+            <p>Giới thiệu <p>
+            Liên hệ
+            </div>
+    
+    
+          </div>
+         
+          
+        </div>
+</body>
+</html>

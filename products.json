@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Du lịch Cao Bằng",
+        "price": 3490000,
+        "image" :"https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Cao%20B%E1%BA%B1ng/th%C3%A1c-b%E1%BA%A3n-gi%E1%BB%91c-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Du lịch sapa",
+        "price": 2690000,
+        "image" :"https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/Du-lich-sapa-fansipan-1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Du lịch Hà Giang",
+        "price": 3490000,
+        "image" :"https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/Du-lich-ha-giang-10.jpg"
+    },
+    {
+        "id": 4,
+        "name": "DU lịch Mộc Châu",
+        "price": 1690000,
+        "image" :"https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/M%E1%BB%99c%20Ch%C3%A2u/du-lich-moc-chau-san-may-ta-xua-1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Du lịch Bắc HÀ",
+        "price": 3490000,
+        "image" :"https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90%C3%B4ng%20-%20T%C3%A2y%20B%E1%BA%AFc/Ho%C3%A0ng-su-ph%C3%AC-3.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Du lịch Hà Giang",
+        "price": 3490000,
+        "image" :"https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Cao%20B%E1%BA%B1ng/th%C3%A1c-b%E1%BA%A3n-gi%E1%BB%91c-2.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Du lịch Singapo",
+        "price": 11990000,
+        "image" :"https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20QU%E1%BB%90C%20T%E1%BA%BE/Singapore/du-lich-singapore-malaysia07.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Du lịch Trung Quốc",
+        "price": 3300000,
+        "image" :"https://khamphadulichviet.com.vn/uploads/28/images/lager-kien-thuy-mong-tu-13.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Du lịch Thái Lan",
+        "price": 9990000,
+        "image" :"https://khamphadulichviet.com.vn/uploads/28/images/lager-koh-phi-phi-phuket-thai-lan-06260334.jpg"
+    }
+]
